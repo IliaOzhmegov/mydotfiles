@@ -1,11 +1,26 @@
 #!/bin/bash
 
 THISPATH=`pwd`
-ln -s $THISPATH/alacritty.yml ~/.config/alacritty/alacritty.yml
-ln -s $THISPATH/.ideavimrc  ~/.ideavimrc
 
-mkdir -p ~/.config/zathura
-ln -s $THISPATH/zathurarc  ~/.config/zathura/zathurarc
+# Alacritty
+ln -sf $THISPATH/alacritty.yml ~/.config/alacritty/alacritty.yml
 
-ln -s $THISPATH/.tmux.conf  ~/.tmux.conf
-ln -s $THISPATH/.tmux.conf.local  ~/.tmux.conf.local
+# RANGER
+ln -sf $THISPATH/ranger ~/.config/ranger
+
+# TMUX
+ln -sf $THISPATH/.tmux.conf  ~/.tmux.conf
+ln -sf $THISPATH/.tmux.conf.local  ~/.tmux.conf.local
+
+# ZSH
+ln -sf $THISPATH/.zshrc  ~/.zshrc
+
+# IDEAVIMRC
+ln -sf $THISPATH/.ideavimrc  ~/.ideavimrc
+
+# ZATHURA
+#mkdir -p ~/.config/zathura
+#ln -s $THISPATH/zathurarc  ~/.config/zathura/zathurarc
+
+# NVIM
+ln -sf $THISPATH/nvim ~/.config/nvim
